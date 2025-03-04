@@ -9,7 +9,7 @@ export class RecipeService {
 
   constructor(private readonly httpService: HttpService) {}
 
-  getRecipes(filterType?: string, filterValue?: string): Observable<any> {
+  getRecipes(filterType?: string, filterValue: string = ``): Observable<any> {
     let url = `${this.BASE_URL}/search.php?s=`; // Default: fetch all recipes
 
     switch (filterType) {
