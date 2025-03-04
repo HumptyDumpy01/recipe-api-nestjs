@@ -26,11 +26,7 @@ To run this application, you need to have Node.js and npm (or yarn) installed.
 3. **Create and Define the FRONTEND_URL in .env":**
    By default, http://localhost:3000 would suffice. (it would point to nextjs front-end.)
    ```bash
-   npm run start:dev
-   # or
-   yarn start:dev
-   # run tests
-   npm  test:watch
+   FRONTEND_URL=http://localhost:3000
    ```
 
    The server will start on port `3005`.
@@ -38,9 +34,8 @@ To run this application, you need to have Node.js and npm (or yarn) installed.
 4. **Run the application:**
 
    ```bash
-   npm run start:dev
-   # or
-   yarn start:dev
+   npm run build
+   npm run start
    # run tests
    npm  test:watch
    ```
