@@ -29,8 +29,6 @@ To run this application, you need to have Node.js and npm (or yarn) installed.
    FRONTEND_URL=http://localhost:3000
    ```
 
-   The server will start on port `3005`.
-
 4. **Run the application:**
 
    ```bash
