@@ -112,4 +112,21 @@ describe('RecipeService', () => {
       done();
     });
   });
+
+  it('should fetch recipe details', (done) => {
+    const result: AxiosResponse = {
+      data: 'test',
+      status: 200,
+      statusText: 'OK',
+      headers: {},
+      // @ts-ignore
+      config: {},
+    };
+    jest.spyOn(httpService, 'get').mockReturnValue(of(result));
+
+    service.getRecipeDetails('52772').subscribe((data) => {
+      expect(data).toEqual(result.data);
+      done();
+    });
+  });
 });
