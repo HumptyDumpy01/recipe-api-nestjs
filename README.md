@@ -10,7 +10,7 @@ To run this application, you need to have Node.js and npm (or yarn) installed.
 1. **Clone the repository:**
 
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/HumptyDumpy01/recipe-api-nestjs.git
    cd nestjs-backend
    ```
 
